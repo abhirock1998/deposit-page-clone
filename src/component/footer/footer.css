@@ -1,0 +1,45 @@
+.footer {
+  background-color: #222;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.footer__box {
+  flex: 0.3;
+}
+.footer__box h2 {
+  color: #fff;
+  margin: 8px 0px;
+  font-size: 18px;
+}
+.footer__box p {
+  line-height: 140%;
+  color: #adb5bd;
+}
+.footer__box h3 {
+  color: #fff;
+  margin: 10px 0px;
+  font-size: 16px;
+}
+.footer__box p span {
+  margin-right: 15px;
+}
+.footer__box p span .MuiSvgIcon-root {
+  font-size: 16px;
+  margin-right: 5px;
+  background-color: #009ed6;
+  color: #fff;
+  padding: 1px;
+
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer__box {
+    margin: 20px 0px;
+  }
+}

@@ -1,0 +1,42 @@
+.mainBody {
+  display: flex;
+  padding: 20px;
+}
+.mainBody__left {
+  flex: 0.3;
+}
+.mainBody__right {
+  flex: 1;
+  padding: 10px;
+}
+.mainBody__right p {
+  line-height: 165%;
+}
+.mainBody__right table {
+  width: 100%;
+  margin: 20px 0px;
+  border-collapse: collapse;
+}
+.mainBody__right table th {
+  padding: 10px 0px;
+  background-color: #009ed6;
+}
+.mainBody__right table tr td {
+  text-align: center;
+  padding: 10px 0px;
+  border: 1px solid #009ed6;
+}
+p.mainBody__rightConclusion {
+  line-height: 180%;
+}
+.mainBody__rightIssue,
+.mainBody__rightFacility,
+.mainBody__rightMature {
+  margin: 10px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .mainBody {
+    flex-direction: column;
+  }
+}

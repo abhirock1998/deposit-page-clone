@@ -1,0 +1,67 @@
+.menuSidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: space;
+  background-color: #009ed6;
+  align-items: flex-start;
+  padding-left: 30px;
+  z-index: 20;
+  height: 100vw;
+  transition: all 1s ease-in-out;
+}
+.menuSidebar__options {
+  padding: 0px 40px;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  position: relative;
+  width: 200px;
+  justify-content: space-between;
+}
+.menuSidebar__options .MuiSvgIcon-root {
+  color: #fff;
+}
+.menuSidebar__options a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menuSidebar__optionsDropDown {
+  position: absolute;
+  top: 0px;
+  z-index: 10;
+  left: 240px;
+  display: none;
+
+  background-color: #fff;
+}
+.menuSidebar__options button {
+  background-color: #009ed6;
+  color: #fff;
+  border-color: #fff;
+  text-transform: inherit;
+}
+
+.menuSidebar__options button .MuiSvgIcon-root {
+  margin-right: 5px;
+}
+.menuSidebar__options:hover .menuSidebar__optionsDropDown {
+  display: block;
+}
+.menuSidebar__options:hover .MuiSvgIcon-root {
+  transform: rotate(-90deg);
+  transition: all 0.2s ease;
+}
+.menuSidebar__optionsDropDown .drop a {
+  color: #222;
+}
+.menuSidebar__optionsDropDown .drop {
+  border-radius: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .menuSidebar {
+    display: none;
+  }
+}
